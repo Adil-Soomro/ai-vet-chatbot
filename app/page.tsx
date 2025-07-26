@@ -155,7 +155,7 @@ export default function Home() {
   return (
     <div className="font-sans min-h-screen bg-gray-800 flex flex-col justify-between">
       <main className="p-6 max-w-2xl mx-auto">
-        <h1 className="text-3xl font-bold mb-4 bg-white">
+        <h1 className="text-3xl font-bold mb-4 text-white">
           🐾 AI Vet Assistant
         </h1>
         <div className="space-y-4 border p-4 rounded-xl bg-gray-100 max-h-[70vh] overflow-y-auto">
@@ -190,7 +190,7 @@ export default function Home() {
             value={userInput}
             onChange={(e) => setUserInput(e.target.value)}
             placeholder="Describe your pet's symptoms..."
-            className="w-full bg-gray-100 text-black border-gray-300 sm:flex-1 border rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full bg-gray-50 text-black border-gray-300 sm:flex-1 border rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
 
           {/* Image input */}
