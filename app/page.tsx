@@ -153,7 +153,7 @@ export default function Home() {
   }, [messages]);
 
   return (
-    <div className="min-h-screen flex flex-col justify-between">
+    <div className="font-sans min-h-screen bg-gray-800 flex flex-col justify-between">
       <main className="p-6 max-w-2xl mx-auto">
         <h1 className="text-3xl font-bold mb-4">🐾 AI Vet Assistant</h1>
         <div className="space-y-4 border p-4 rounded-xl bg-gray-100 max-h-[70vh] overflow-y-auto">
@@ -196,19 +196,19 @@ export default function Home() {
             type="file"
             accept="image/*"
             onChange={handleImageUpload}
-            className="w-full sm:w-auto text-sm text-gray-500 file:mr-2 file:py-1 file:px-3 file:rounded-lg file:border-0 file:bg-gray-100 file:text-sm"
+            className="w-full sm:w-auto text-sm text-gray-100 file:mr-2 file:py-1 file:px-3 file:rounded-lg file:border-0 file:bg-gray-600 file:text-sm"
           />
 
           {/* Button */}
           <button
             onClick={sendMessage}
-            className="w-full sm:w-auto bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 text-sm transition-colors duration-200"
+            className="w-full sm:w-auto cursor-pointer bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 text-sm transition-colors duration-200"
           >
             Send
           </button>
         </div>
       </main>
-      <footer className="text-sm font-sans text-center text-gray-400 flex gap-1 justify-center items-center py-2">
+      <footer className="text-sm font-sans text-center text-gray-200 flex gap-1 justify-center items-center py-2">
         Created with <span className="animate-pulse text-pink-700">❤</span> by{" "}
         <Link
           href="https://github.com/Adil-Soomro"
